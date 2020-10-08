@@ -1,0 +1,3 @@
+# ignore csv and db files - only meta files stored 
+*.csv
+*.db
