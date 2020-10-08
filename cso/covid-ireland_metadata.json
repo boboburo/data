@@ -1,0 +1,16 @@
+{
+    "databases": {
+        "cso": {
+            "title": "Covid Data Related to Ireland",
+            "description": "Automatically (tobe) updated COVID table for Ireland",
+            "source_url": "https://covid19ireland-geohive.hub.arcgis.com/",
+            "license": "Layers readily available",
+            "tables": {
+                "dailycases": {
+                    "description_html": "Daily counts of COVID Cases in Ireland",
+                    "source_url" : "https://covid19ireland-geohive.hub.arcgis.com/datasets/d9be85b30d7748b5b7c09450b8aede63_0"
+                }
+            }
+        }
+    }
+}
