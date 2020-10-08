@@ -1,0 +1,41 @@
+{
+    "databases": {
+        "cso": {
+            "title": "CSO Ireland Data",
+            "description": "Collection of tables from CSO Ireland",
+            "source_url": "http://cso.ie",
+            "tables": {
+                "area_of_residence": {
+                    "description_html": "Hand Cleaned Table useful for geo aggregation.\nColumn
+                    type_post_2014 is geo type after the chanages on Local Government areas.\n
+                    (s = State, p = Provience, u = County, i = City, d = Dublin Council Area, su = Local Government
+                     Area below a County level.)\n NUT relates to Geo Statistical Areas defined by EU for funding etc."
+                },
+                "nuts_area_details" :{
+                    "description_html": "Population stats related to NUTS areas",
+                    "source_url": "https://en.wikipedia.org/wiki/NUTS_statistical_regions_of_Ireland"
+                },
+                "VSA07" :{
+                    "description_html" : "Deaths Occurring by Area of Residence, Sex, Age at Death and Year",
+                    "source_url" : "https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=VSA07&PLanguage=0"
+
+                },
+                "VSAQ2" :{
+                    "description_html" : "Deaths Registered Provisional by Age at Death and Quarter",
+                    "source_url" : "https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=VSAQ2&PLanguage=0"
+                },
+                "VSQ17" :{
+                    "description_html" : "Deaths Registered Provisional by Sex, Statistic and Quarter",
+                    "source_url" : "https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=VSQ17&PLanguage=0"
+                },
+                "VSQ20" :{
+                    "description_html" : "Underlying cause of death by Age Group, ICD 10 Diagnostic Group, Year and Sex",
+                    "source_url" : "https://statbank.cso.ie/px/pxeirestat/Statire/SelectVarVal/Define.asp?maintable=VSQ17&PLanguage=0"
+                }
+            }
+        }
+    }
+}
+
+
+
