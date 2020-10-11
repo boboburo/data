@@ -49,11 +49,21 @@ datasette publish cloudrun cso.db --service=cso
 #push with associated metadata
 datasette publish cloudrun cso.db --service=cso --metadata=cso_metadata.json
 ```
-Push with metadata
-
-```bash
-
-```
-
 
 *Note I try to have one service per DB, may change this in future*
+
+
+# COVID Ireland Data
+
+Pull data from [Ireland's Covid Data Hub](https://covid19ireland-geohive.hub.arcgis.com/). 
+
+```bash
+curl https://opendata.arcgis.com/datasets/d9be85b30d7748b5b7c09450b8aede63_0.geojson \
+    | geojson-to-sqlite covid-ireland.db dailycases - --pk OBJECTID
+```
+
+# TODO
+
+- [ ] Add covid to google cloud
+- [ ] Work out if geometery can be dropped in json grab
+- [ ] Automate the pull using github actions. 
