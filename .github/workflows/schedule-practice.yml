@@ -18,13 +18,13 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
-     - name: Configure pip caching
-     - uses: actions/cache@v1
-       with:
+    - uses: actions/cache@v1
+      name: Configure pip caching
+      with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
-            ${{ runner.os }}-pip-
+        ${{ runner.os }}-pip-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
