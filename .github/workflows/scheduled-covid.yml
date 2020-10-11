@@ -3,10 +3,9 @@ name: Fetch the lastest data, commit, build and deploy with Datasetted
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on:
-  repository_dispatch: #Can run it manually also
-  schedule:
-    - cron: '0 2 * * *' #Execute at  2am every day
+on: [workflow_dispatch] #repository_dispatch: #Can run it manually also
+  #schedule:
+   # - cron: '0 2 * * *' #Execute at  2am every day
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
