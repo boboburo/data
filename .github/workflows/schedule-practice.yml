@@ -15,6 +15,5 @@ jobs:
             with:
                 python-version: 3.8
         - name: Test sh
-          run: |
-            . practice/grab-data.sh
+          run: . practice/grab-data.sh
 
