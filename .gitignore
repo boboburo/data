@@ -2,3 +2,7 @@
 *.csv
 *.db
 *.sqlite
+
+#don't include vscode stuff
+.vscode/
+.Rhistory
