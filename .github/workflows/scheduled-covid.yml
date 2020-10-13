@@ -1,30 +1,24 @@
 # Workflow copied from https://simonwillison.net/2020/Jan/21/github-actions-cloud-run/
-name: Fetch the lastest data, commit, build and deploy with Datasetted
+name: Fetch latest Irish COVID data
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on: [workflow_dispatch] #repository_dispatch: #Can run it manually also
   #schedule:
    # - cron: '0 2 * * *' #Execute at  2am every day
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "scheduled"
-  scheduled:
-    # The type of runner that the job will run on
+  # This workflow contains a single job called "scheduled-fetch-data"
+  scheduled-fetch-data:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-      name: Check out repo
+    - name: checkoout the code
+      uses: actions/checkout@v2
     - name: Set up Python 
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
-    - uses: actions/cache@v1
-      name: Configure pip caching
+    - name: configure pip caching
+      uses: actions/cache@v1
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
