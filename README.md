@@ -5,6 +5,8 @@ Google Cloud.
 
 Each DB will will have an associated metadata.json file. 
 
+## Setup 
+
 ## Create the virtual environment 
 
 Using Anaconda with Python 3.8. Setup virtual environment, install some libraries and write to a requirements.txt file. 
