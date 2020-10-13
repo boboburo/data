@@ -4,7 +4,8 @@ name: Practice Actions
 on: [workflow_dispatch]
 
 jobs:
-  build:
+  practice-ga:
+    name: Practicing Github Actions. 
 
     runs-on: ubuntu-latest
     strategy:
