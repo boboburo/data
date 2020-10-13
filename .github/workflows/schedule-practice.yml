@@ -37,4 +37,4 @@ jobs:
         gcloud components install beta
         gcloud config set run/region europe-west1
         gcloud config set project practice-292411
-        datasette publish cloudrun practice_with_ga.db --service practice
+        datasette publish cloudrun practice_with_ga.sqlite --service practice
