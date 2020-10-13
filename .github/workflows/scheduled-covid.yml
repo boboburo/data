@@ -1,8 +1,9 @@
-name: Fetch latest Irish COVID data
+name: Fetch latest Irish COVID data at 1am
 
-on: [workflow_dispatch] #repository_dispatch: #Can run it manually also
-  #schedule:
-   # - cron: '0 2 * * *' #Execute at  2am every day
+#on: [workflow_dispatch] #repository_dispatch: #Can run it manually also
+on:
+  schedule:
+    - cron: "0 1 * * *"
 
 jobs:
   # This workflow contains a single job called "scheduled-fetch-data"
