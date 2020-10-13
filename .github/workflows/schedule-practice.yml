@@ -31,10 +31,10 @@ jobs:
       with:
         version: '275.0.0'
         service_account_email: ${{ secrets.GCP_SA_EMAIL }}
-        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        service_account_key: ${{ secrets.GCP_SA_KEY_PRACTICE }}
     - name: Deploy to Cloud Run
       run: |-
         gcloud components install beta
         gcloud config set run/region europe-west1
-        gcloud config set project data-hosting-291810
-        datasette publish cloudrun practice.db --service practice
+        gcloud config set project practice-292411
+        datasette publish cloudrun practice_with_ga.db --service practice
