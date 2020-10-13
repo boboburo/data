@@ -1,11 +1,9 @@
-# Workflow copied from https://simonwillison.net/2020/Jan/21/github-actions-cloud-run/
 name: Fetch latest Irish COVID data
 
 on: [workflow_dispatch] #repository_dispatch: #Can run it manually also
   #schedule:
    # - cron: '0 2 * * *' #Execute at  2am every day
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "scheduled-fetch-data"
   scheduled-fetch-data:
