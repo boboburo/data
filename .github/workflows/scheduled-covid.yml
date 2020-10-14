@@ -40,5 +40,4 @@ jobs:
         gcloud components install beta
         gcloud config set run/region europe-west1
         gcloud config set project data-hosting-291810
-        datasette publish cloudrun covid-ireland.db --service covidireland --
         datasette publish cloudrun --service=covid-irl covid-ireland.db
