@@ -5,6 +5,11 @@ Google Cloud.
 
 Each DB will will have an associated metadata.json file. 
 
+# Data Sets
+
+[Covid Ireland](https://covid-irl-sxsrkkt7yq-ew.a.run.app/)
+[CSO Ireland](https://cso-sxsrkkt7yq-ew.a.run.app/)
+
 ## Setup 
 
 ## Create the virtual environment 
