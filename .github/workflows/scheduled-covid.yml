@@ -4,6 +4,7 @@ name: Fetch latest Irish COVID data at 1am
 on:
   schedule:
     - cron: "0 1 * * *"
+  workflow_dispatch:
 
 jobs:
   # This workflow contains a single job called "scheduled-fetch-data"
