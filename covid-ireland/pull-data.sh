@@ -14,13 +14,3 @@ ConfirmedCovidCases,PopulationProportionCovidCases FROM dailycases_new;
 DROP TABLE IF EXISTS dailycases_geo;
 END_SQL
 
-
-
----WITH tablelen AS (SELECT COUNT(*) FROM dailycases)
----DROP TABLE IF tablelen > 7000 dailycases;
----CREATE TABLE dailycases AS SELECT OBJECTID, ORIGID,CountyName,PopulationCensus16,TimeStamp,
----ConfirmedCovidCases,PopulationProportionCovidCases FROM dailycases_geo;
----DROP TABLE IF EXISTS dailycases_geo;
-END_SQL
-
-
